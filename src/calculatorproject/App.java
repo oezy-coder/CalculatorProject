@@ -29,8 +29,9 @@ public class App {
 
             // calculate() 호출해서 결과 얻기
             int result = calculator.calculate(num1, num2, ch);
-
-            System.out.println("결과: " + result);
+            if (!(ch == '/' && num2 == 0)) {
+                System.out.println("결과: " + result);
+            }
 
             System.out.print("더 계산하시겠습니까? (exit 입력 시 종료) ");
             String again = sc.nextLine();
