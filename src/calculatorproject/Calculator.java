@@ -5,10 +5,6 @@ import java.util.List;
 
 public class Calculator {
 
-    //        Lv 2.
-    //        1. 계산된 결과 값들을 기록하는 컬렉션을 만든다.
-    //        2. 컬렉션의 가장 먼저 저장된 데이터를 삭제하는 기능을 만든다.
-
         // 속성
         private int result;
 

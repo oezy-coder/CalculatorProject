@@ -6,10 +6,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-//        Lv 1.
-//        1. 계산기는 2개의 숫자를 받을 수 있고 사칙연산 될 문자를 받을 수 있다.
-//        2. 계산기는 exit을 입력할 때까지 계속해서 값을 받고 연산 결과를 반환한다.
-
         // Scanner로 입력 받기
         Scanner sc = new Scanner(System.in);
 
