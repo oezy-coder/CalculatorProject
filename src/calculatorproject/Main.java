@@ -10,10 +10,11 @@ public class Main {
 //        1. 계산기는 2개의 숫자를 받을 수 있고 사칙연산 될 문자를 받을 수 있다.
 //        2. 계산기는 exit을 입력할 때까지 계속해서 값을 받고 연산 결과를 반환한다.
 
-        // 1. 객체화 하기
+        // Scanner로 입력 받기
         Scanner sc = new Scanner(System.in);
 
-        // 2. 정수형 입력 받기
+        // 정수형 입력 받기
+        // while 문을 이용하여 무한으로 계산되도록 하기
         while (true) {
             System.out.print("첫 번째 숫자 입력: ");
             String input1 = sc.nextLine();
@@ -23,12 +24,11 @@ public class Main {
             String input2 = sc.nextLine();
             int num2 = Integer.parseInt(input2);
 
-            // 3. 사칙연산 기호 입력 받기
+            // 사칙연산 기호 입력 받기
             System.out.print("사칙연산 기호 입력: ");
             char ch = sc.nextLine().charAt(0);
 
-            // 5. 정수와 기호를 이용하여 연산 후 결과값 출력하기
-            // 6. while 문을 이용하여 무한으로 계산되도록 하기
+            // 정수와 기호를 이용하여 연산 후 결과값 출력하기
             int result;
             if (ch == '+') {
                 result = num1 + num2;
@@ -51,7 +51,7 @@ public class Main {
                 }
             }
 
-            // 7. 계산이 계속되거나 종료할 수 있도록 만들기
+            // 계산이 계속되거나 종료할 수 있도록 만들기
             System.out.print("더 계산하시겠습니까? (exit 입력 시 종료) ");
             String again = sc.nextLine();
             if (again.trim().equalsIgnoreCase("exit")) {
